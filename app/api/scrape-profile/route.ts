@@ -165,26 +165,12 @@ const SPECIAL_GAME_BADGES = [ // This might be redundant if you only use KNOWN_S
 ];
 
 const KNOWN_SPECIAL_GAME_BADGES = [
-  "Arcade Skills Resolve",
-  "Arcade Love Beyond Query",
-  "Color Your Skills",
-  "Arcade TechCare"
+  // 2 point game
+  "ExtraSkillestrial!"
 ];
 
 const KNOWN_GAME_BADGES = [
-  "Skills Boost Arcade Certification Zone May 2025",
-  "Arcade NetworSkills",
-  "Level 3: Building Blocks",
-  "Level 1: Data Modeling and Reporting",
-  "Skills Boost Arcade Base Camp May 2025",
-  "Level 2: Data Exploration and Integration",
-  "Skills Boost Arcade Certification Zone April 2025",
-  "Work Meets Play: Travel Tales",
-  "Level 3: The Arcade Quiz",
-  "Level 1: Application Development and Security with GCP",
-  "Skills Boost Arcade Base Camp April 2025",
-  "Level 2: Cloud Infrastructure & API Essentials",
-// second Jul
+// second Jul game
   "Level 1: Core Infrastructure and Security",
   "Level 2: Modern Application Deployment",
   "Level 3: Advanced App Operations",
@@ -192,14 +178,6 @@ const KNOWN_GAME_BADGES = [
 ];
 
 const KNOWN_TRIVIA_BADGES = [
-  "Skills Boost Arcade Trivia May 2025 Week 4",
-  "Skills Boost Arcade Trivia May 2025 Week 3",
-  "Skills Boost Arcade Trivia May 2025 Week 2",
-  "Skills Boost Arcade Trivia May 2025 Week 1",
-  "Skills Boost Arcade Trivia April 2025 Week 4",
-  "Skills Boost Arcade Trivia April 2025 Week 3",
-  "Skills Boost Arcade Trivia April 2025 Week 2",
-  "Skills Boost Arcade Trivia April 2025 Week 1",
   // second jul
   "Skills Boost Arcade Trivia July 2025 Week 1",
   "Skills Boost Arcade Trivia July 2025 Week 2",
