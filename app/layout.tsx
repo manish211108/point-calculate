@@ -4,7 +4,7 @@ import Footer from "@/components/Footer";
 import Script from 'next/script';
 
 export const metadata: Metadata = {
-  title: 'Arcade Point Calculator | Track Google Cloud Arcade Progress & Win Prizes',
+  title: 'Arcade Point Calculator',
   description: 'Arcade Point Calculator: Your ultimate companion for tracking Google Cloud Arcade progress, calculating points, and winning prizes. Use our trusted calculator to monitor your achievements and maximize your rewards in the Google Cloud Arcade program.',
 }
 
