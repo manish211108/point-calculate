@@ -1,7 +1,9 @@
+"use client"
 import type { Metadata } from 'next'
 import './globals.css'
 import Footer from "@/components/Footer";
 import Script from 'next/script';
+import { usePathname } from 'next/navigation';
 
 export const metadata: Metadata = {
   title: 'Arcade Point Calculator',
@@ -13,6 +15,9 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
+  const pathname = usePathname();
+  // Don't show ads on 404 page
+  const showAds = pathname !== '/404';
   return (
     <html lang="en">
       <head>
@@ -63,12 +68,38 @@ export default function RootLayout({
           `}
         </Script>
       </head>
-      <body>{children}
-        <amp-auto-ads type="adsense"
-          data-ad-client="ca-pub-3136730634801361">
-        </amp-auto-ads>
+      <body>
+        {showAds && (
+          <>
+            <Script
+              async
+              src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+              crossOrigin="anonymous"
+              strategy="afterInteractive"
+            />
+            <ins className="adsbygoogle"
+                 style={{ display: "block" }}
+                 data-ad-client="ca-pub-3136730634801361"
+                 data-ad-slot="5057258625"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <Script id="adsbygoogle-init" strategy="afterInteractive">
+              {`(adsbygoogle = window.adsbygoogle || []).push({});`}
+            </Script>
+          </>
+        )}
+        {children}
         {/* Footer will be rendered in the main page, not here, to access setCurrentView */}
       </body>
     </html>
   )
 }
+
+
+
+
+
+
+
+
+
